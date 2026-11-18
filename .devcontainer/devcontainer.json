@@ -1,0 +1,11 @@
+{
+  "name": "Tris box",
+  "image": "ghcr.io/polats/tris-box:1",
+  "remoteUser": "paseo",
+  "forwardPorts": [6767, 6768],
+  "portsAttributes": {
+    "6767": { "label": "Agents", "onAutoForward": "silent" },
+    "6768": { "label": "Sign-in check", "onAutoForward": "silent" }
+  },
+  "postStartCommand": "tris-box-start"
+}
